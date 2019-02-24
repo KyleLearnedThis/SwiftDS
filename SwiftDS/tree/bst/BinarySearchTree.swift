@@ -1,0 +1,108 @@
+//
+//  BinarySearchTree.swift
+//  SwiftExercises
+//
+//  Copyright © 2018 kylelearnedthis. All rights reserved.
+//
+
+import Foundation
+
+class BinarySearchTree<T: Comparable> {
+    var root : TreeNode<T>? = nil
+
+    init() {
+        root = nil
+    }
+
+    init(input: Array<T>) {
+        for i in input {
+            insert(element: i)
+        }
+    }
+    
+    func insert(element: T) {
+        let node = TreeNode(data: element)
+        if let rootNode = self.root {
+            self.insertWork(rootNode, node)
+        } else {
+            self.root = node
+        }
+    }
+    
+    private func insertWork(_ currentNode: TreeNode<T>, _ node: TreeNode<T>) {
+        let cur = currentNode
+        
+        if currentNode.data > node.data {
+            if let leftNode = cur.left {
+                self.insertWork(leftNode, node)
+            } else {
+                cur.left = node
+            }
+        } else {
+            if let right = cur.right {
+                self.insertWork(right, node)
+            } else {
+                cur.right = node
+            }
+        }
+    }
+
+    func search(searchValue: T) -> TreeNode<T>? {
+        var cur = root
+        while(cur != nil) {
+            if searchValue == cur?.data {
+                return cur
+            } else if searchValue > (cur?.data)! {
+                cur = cur?.right
+            } else {
+                cur = cur?.left
+            }
+        }
+        return nil
+    }
+    
+    public func printPreOrder() {
+        preOrder(node: root)
+    }
+
+    func preOrder(node: TreeNode<T>?) {
+        if node == nil {
+            return
+        }
+        if let value = node?.data {
+            print(value)
+        }
+        preOrder(node: node?.left)
+        preOrder(node: node?.right)
+    }
+    
+    public func printInOrder() {
+        inOrder(node: root)
+    }
+
+    func inOrder(node: TreeNode<T>?) {
+        if node == nil {
+            return
+        }
+        inOrder(node: node?.left)
+        if let value = node?.data {
+            print(value)
+        }
+        inOrder(node: node?.right)
+    }
+
+    public func printPostOrder() {
+        postOrder(node: root)
+    }
+
+    func postOrder(node: TreeNode<T>?) {
+        if node == nil {
+            return
+        }
+        postOrder(node: node?.left)
+        postOrder(node: node?.right)
+        if let value = node?.data {
+            print(value)
+        }
+    }
+}
