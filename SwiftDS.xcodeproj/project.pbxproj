@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DEA1E1FC222349C700835262 /* SwiftDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA1E1F2222349C700835262 /* SwiftDS.framework */; };
-		DEA1E201222349C700835262 /* SwiftDSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E200222349C700835262 /* SwiftDSTests.swift */; };
 		DEA1E203222349C700835262 /* SwiftDS.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA1E1F5222349C700835262 /* SwiftDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA1E22022234A0C00835262 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E21F22234A0C00835262 /* StackTest.swift */; };
 		DEA1E22C22234A4700835262 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E22222234A4600835262 /* Node.swift */; };
@@ -46,7 +45,6 @@
 		DEA1E1F5222349C700835262 /* SwiftDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDS.h; sourceTree = "<group>"; };
 		DEA1E1F6222349C700835262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA1E1FB222349C700835262 /* SwiftDSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA1E200222349C700835262 /* SwiftDSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDSTests.swift; sourceTree = "<group>"; };
 		DEA1E202222349C700835262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA1E21F22234A0C00835262 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		DEA1E22222234A4600835262 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				DEA1E23A22234A7200835262 /* list */,
 				DEA1E21E222349F000835262 /* queue */,
 				DEA1E23B22234A7B00835262 /* tree */,
-				DEA1E200222349C700835262 /* SwiftDSTests.swift */,
 				DEA1E202222349C700835262 /* Info.plist */,
 			);
 			path = SwiftDSTests;
@@ -326,7 +323,6 @@
 				DEA1E23722234A4700835262 /* BinarySearchTree.swift in Sources */,
 				DEA1E22F22234A4700835262 /* LinkedList.swift in Sources */,
 				DEA1E23F22234AF400835262 /* QueueTest.swift in Sources */,
-				DEA1E201222349C700835262 /* SwiftDSTests.swift in Sources */,
 				DEA1E23322234A4700835262 /* PriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
