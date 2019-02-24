@@ -2,7 +2,6 @@
 //  SwiftDS.h
 //  SwiftDS
 //
-//  Created by dsch_iter on 2/24/19.
 //  Copyright © 2019 kylelearnedthis. All rights reserved.
 //
 
