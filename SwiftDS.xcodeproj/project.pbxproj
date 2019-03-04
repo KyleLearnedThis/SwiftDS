@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE900598222CF6C300458081 /* BaseSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900597222CF6C300458081 /* BaseSort.swift */; };
+		DE900599222CF6C300458081 /* BaseSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900597222CF6C300458081 /* BaseSort.swift */; };
+		DE90059B222CF78E00458081 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90059A222CF78E00458081 /* Sorter.swift */; };
+		DE90059C222CF78E00458081 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90059A222CF78E00458081 /* Sorter.swift */; };
+		DE90059F222CF99B00458081 /* BaseSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90059E222CF99B00458081 /* BaseSortTest.swift */; };
+		DE9005A4222CFD4E00458081 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A3222CFD4E00458081 /* BubbleSort.swift */; };
+		DE9005A5222CFD4E00458081 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A3222CFD4E00458081 /* BubbleSort.swift */; };
+		DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A6222CFD8C00458081 /* BubbleSortTest.swift */; };
 		DEA1E1FC222349C700835262 /* SwiftDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA1E1F2222349C700835262 /* SwiftDS.framework */; };
 		DEA1E203222349C700835262 /* SwiftDS.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA1E1F5222349C700835262 /* SwiftDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA1E22022234A0C00835262 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E21F22234A0C00835262 /* StackTest.swift */; };
@@ -41,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE900597222CF6C300458081 /* BaseSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSort.swift; sourceTree = "<group>"; };
+		DE90059A222CF78E00458081 /* Sorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
+		DE90059E222CF99B00458081 /* BaseSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseSortTest.swift; path = SwiftDSTests/sort/BaseSortTest.swift; sourceTree = SOURCE_ROOT; };
+		DE9005A3222CFD4E00458081 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		DE9005A6222CFD8C00458081 /* BubbleSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTest.swift; sourceTree = "<group>"; };
 		DEA1E1F2222349C700835262 /* SwiftDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA1E1F5222349C700835262 /* SwiftDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDS.h; sourceTree = "<group>"; };
 		DEA1E1F6222349C700835262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +92,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE900596222CF65400458081 /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				DE900597222CF6C300458081 /* BaseSort.swift */,
+				DE90059A222CF78E00458081 /* Sorter.swift */,
+				DE9005A3222CFD4E00458081 /* BubbleSort.swift */,
+			);
+			path = sort;
+			sourceTree = "<group>";
+		};
+		DE90059D222CF91600458081 /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				DE9005A6222CFD8C00458081 /* BubbleSortTest.swift */,
+				DE90059E222CF99B00458081 /* BaseSortTest.swift */,
+			);
+			path = sort;
+			sourceTree = "<group>";
+		};
 		DEA1E1E8222349C700835262 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +134,7 @@
 			children = (
 				DEA1E22122234A4600835262 /* list */,
 				DEA1E22422234A4600835262 /* queue */,
+				DE900596222CF65400458081 /* sort */,
 				DEA1E22822234A4700835262 /* tree */,
 				DEA1E1F5222349C700835262 /* SwiftDS.h */,
 				DEA1E1F6222349C700835262 /* Info.plist */,
@@ -114,6 +147,7 @@
 			children = (
 				DEA1E23A22234A7200835262 /* list */,
 				DEA1E21E222349F000835262 /* queue */,
+				DE90059D222CF91600458081 /* sort */,
 				DEA1E23B22234A7B00835262 /* tree */,
 				DEA1E202222349C700835262 /* Info.plist */,
 			);
@@ -302,7 +336,10 @@
 				DEA1E23422234A4700835262 /* Queue.swift in Sources */,
 				DEA1E22E22234A4700835262 /* LinkedList.swift in Sources */,
 				DEA1E23622234A4700835262 /* BinarySearchTree.swift in Sources */,
+				DE900598222CF6C300458081 /* BaseSort.swift in Sources */,
 				DEA1E23222234A4700835262 /* PriorityQueue.swift in Sources */,
+				DE90059B222CF78E00458081 /* Sorter.swift in Sources */,
+				DE9005A4222CFD4E00458081 /* BubbleSort.swift in Sources */,
 				DEA1E23022234A4700835262 /* Stack.swift in Sources */,
 				DEA1E22C22234A4700835262 /* Node.swift in Sources */,
 			);
@@ -314,8 +351,12 @@
 			files = (
 				DEA1E22D22234A4700835262 /* Node.swift in Sources */,
 				DEA1E23522234A4700835262 /* Queue.swift in Sources */,
+				DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */,
+				DE90059C222CF78E00458081 /* Sorter.swift in Sources */,
 				DEA1E23922234A4700835262 /* TreeNode.swift in Sources */,
+				DE900599222CF6C300458081 /* BaseSort.swift in Sources */,
 				DEA1E23122234A4700835262 /* Stack.swift in Sources */,
+				DE90059F222CF99B00458081 /* BaseSortTest.swift in Sources */,
 				DEA1E23D22234AC100835262 /* LinkedListTest.swift in Sources */,
 				DEA1E24122234B1A00835262 /* PriorityQueueTest.swift in Sources */,
 				DEA1E22022234A0C00835262 /* StackTest.swift in Sources */,
@@ -324,6 +365,7 @@
 				DEA1E22F22234A4700835262 /* LinkedList.swift in Sources */,
 				DEA1E23F22234AF400835262 /* QueueTest.swift in Sources */,
 				DEA1E23322234A4700835262 /* PriorityQueue.swift in Sources */,
+				DE9005A5222CFD4E00458081 /* BubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
