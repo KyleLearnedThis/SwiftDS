@@ -12,7 +12,8 @@ class BubbleSortTest: XCTestCase {
     func testBasic() {
         let n: [Int] = [9,8,7,6,5]
         let x = BubbleSort(input: n)
-        x.sort()
+        let result = x.sort()
+        dump(result)
     }
 
 }

@@ -25,6 +25,5 @@ public class BaseSort {
             Swift.print(i, terminator: " ")
         }
         Swift.print("]")
-        Swift.print(" Hello")
     }
 }

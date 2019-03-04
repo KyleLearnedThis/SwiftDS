@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Sorter {
-    func sort()
+    func sort() -> [Int]
 }
