@@ -105,4 +105,16 @@ class BinarySearchTree<T: Comparable> {
             print(value)
         }
     }
+
+    public func maxLevel(node: TreeNode<T>?) -> Int {
+        if(node != nil) {
+            return max(maxLevel(node: node?.left), maxLevel(node: node?.right)) + 1
+        } else {
+            return 0
+        }
+    }
+
+    public func getRoot() -> TreeNode<T>? {
+        return root
+    }
 }

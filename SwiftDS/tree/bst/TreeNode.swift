@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TreeNode<T> {
+public class TreeNode<T> {
     var data: T
     var left: TreeNode?
     var right: TreeNode?
