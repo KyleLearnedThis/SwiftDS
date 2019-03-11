@@ -15,11 +15,15 @@ class BinarySearchTree<T: Comparable> {
     }
 
     init(input: Array<T>) {
+        insert(input: input)
+    }
+
+    func insert(input: Array<T>) {
         for i in input {
             insert(element: i)
         }
     }
-    
+
     func insert(element: T) {
         let node = TreeNode(data: element)
         if let rootNode = self.root {
@@ -63,6 +67,7 @@ class BinarySearchTree<T: Comparable> {
     
     public func printPreOrder() {
         preOrder(node: root)
+        print("")
     }
 
     func preOrder(node: TreeNode<T>?) {
@@ -70,7 +75,7 @@ class BinarySearchTree<T: Comparable> {
             return
         }
         if let value = node?.data {
-            print(value)
+            print(value, terminator: " ")
         }
         preOrder(node: node?.left)
         preOrder(node: node?.right)
@@ -78,6 +83,7 @@ class BinarySearchTree<T: Comparable> {
     
     public func printInOrder() {
         inOrder(node: root)
+        print("")
     }
 
     func inOrder(node: TreeNode<T>?) {
@@ -86,13 +92,14 @@ class BinarySearchTree<T: Comparable> {
         }
         inOrder(node: node?.left)
         if let value = node?.data {
-            print(value)
+            print(value, terminator: " ")
         }
         inOrder(node: node?.right)
     }
 
     public func printPostOrder() {
         postOrder(node: root)
+        print("")
     }
 
     func postOrder(node: TreeNode<T>?) {
@@ -102,7 +109,7 @@ class BinarySearchTree<T: Comparable> {
         postOrder(node: node?.left)
         postOrder(node: node?.right)
         if let value = node?.data {
-            print(value)
+            print(value, terminator: " ")
         }
     }
 
