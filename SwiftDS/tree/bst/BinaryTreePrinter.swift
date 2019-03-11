@@ -6,20 +6,21 @@
 //
 
 import Foundation
-//import Darwin
 
 public class BinaryTreePrinter<T: Comparable> {
 
     public static func maxLevel(node: TreeNode<T>?) -> Int {
         if(node != nil) {
-            return max(BinaryTreePrinter.maxLevel(node: node?.left),
-                       BinaryTreePrinter.maxLevel(node: node?.right)) + 1
+            return max(maxLevel(node: node?.left), maxLevel(node: node?.right)) + 1
         } else {
             return 0
         }
     }
 
     private static func printWhiteSpaces(count: Int) {
+        if(count <= 0) {
+            return
+        }
         for _ in 0..<count {
             print(" ", terminator: " ")
         }
@@ -48,15 +49,15 @@ public class BinaryTreePrinter<T: Comparable> {
 
         let floor = maxLevel - level
         let edgeLines = intValue(value: pow(2, max(floor - 1, 0)))
-        let firstSpaces = intValue(value: pow(2, (floor))) - 1
-        let betweenSpaces = intValue(value: pow(2, (floor + 1))) - 1
+        let firstSpaces = intValue(value: pow(2, floor)) - 1
+        let betweenSpaces = intValue(value: pow(2, floor + 1)) - 1
         printWhiteSpaces(count: firstSpaces)
 
         var newNodes: [TreeNode<T>?] = []
         for node in nodes {
             if(node != nil) {
                 if let val = node?.data {
-                    print(val)
+                    print(val, terminator: " ")
                 }
                 newNodes.append(node?.left)
                 newNodes.append(node?.right)
@@ -68,7 +69,6 @@ public class BinaryTreePrinter<T: Comparable> {
 
             printWhiteSpaces(count: betweenSpaces)
         }
-
         print("")
 
         for i in 1...edgeLines {

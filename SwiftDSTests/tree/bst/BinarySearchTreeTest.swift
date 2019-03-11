@@ -10,13 +10,13 @@ import XCTest
 class BinarySearchTreeTest: XCTestCase {
 
     func testPreOrder() {
-        let input = [15, 8, 30, 4, 10, 20, 40]
+        let input = [15, 6, 18, 3, 7, 17, 20, 2, 4, 13, 9]
         let bst = BinarySearchTree<Int>(input: input)
         bst.printPreOrder()
     }
 
     func testInOrder() {
-        let input = [15, 8, 30, 4, 10, 20, 40]
+        let input = [15, 6, 18, 3, 7, 17, 20, 2, 4, 13, 9]
         let bst = BinarySearchTree<Int>(input: input)
         bst.printInOrder()
         let root = bst.getRoot()
@@ -24,7 +24,7 @@ class BinarySearchTreeTest: XCTestCase {
     }
 
     func testPostOrder() {
-        let input = [15, 8, 30, 4, 10, 20, 40]
+        let input = [15, 6, 18, 3, 7, 17, 20, 2, 4, 13, 9]
         let bst = BinarySearchTree<Int>(input: input)
         bst.printPostOrder()
     }
