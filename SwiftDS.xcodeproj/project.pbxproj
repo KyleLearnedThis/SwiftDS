@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0079532234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */; };
+		DE0079542234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */; };
 		DE900598222CF6C300458081 /* BaseSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900597222CF6C300458081 /* BaseSort.swift */; };
 		DE900599222CF6C300458081 /* BaseSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900597222CF6C300458081 /* BaseSort.swift */; };
 		DE90059B222CF78E00458081 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE90059A222CF78E00458081 /* Sorter.swift */; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePrinter.swift; sourceTree = "<group>"; };
 		DE900597222CF6C300458081 /* BaseSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSort.swift; sourceTree = "<group>"; };
 		DE90059A222CF78E00458081 /* Sorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
 		DE90059E222CF99B00458081 /* BaseSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseSortTest.swift; path = SwiftDSTests/sort/BaseSortTest.swift; sourceTree = SOURCE_ROOT; };
@@ -196,6 +199,7 @@
 			children = (
 				DEA1E22A22234A4700835262 /* BinarySearchTree.swift */,
 				DEA1E22B22234A4700835262 /* TreeNode.swift */,
+				DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */,
 			);
 			path = bst;
 			sourceTree = "<group>";
@@ -332,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0079532234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DEA1E23822234A4700835262 /* TreeNode.swift in Sources */,
 				DEA1E23422234A4700835262 /* Queue.swift in Sources */,
 				DEA1E22E22234A4700835262 /* LinkedList.swift in Sources */,
@@ -350,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA1E22D22234A4700835262 /* Node.swift in Sources */,
+				DE0079542234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DEA1E23522234A4700835262 /* Queue.swift in Sources */,
 				DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */,
 				DE90059C222CF78E00458081 /* Sorter.swift in Sources */,

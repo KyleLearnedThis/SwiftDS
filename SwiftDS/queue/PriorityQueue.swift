@@ -1,5 +1,5 @@
 //  Copied from https://github.com/davecom/SwiftPriorityQueue
-//  Need to use it for data strucure.
+//  For algorith use
 //  PriorityQueue.swift
 //  SwiftExercises
 //

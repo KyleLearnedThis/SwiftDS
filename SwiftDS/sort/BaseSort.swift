@@ -11,12 +11,8 @@ public class BaseSort {
 
     var input: [Int]
 
-    init(input: [Int]) {
+    init(input: [Int] = []) {
         self.input = input
-    }
-
-    init() {
-        self.input = [Int]()
     }
 
     public func print() {
