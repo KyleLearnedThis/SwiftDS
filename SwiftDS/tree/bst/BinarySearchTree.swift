@@ -7,14 +7,14 @@
 
 import Foundation
 
-class BinarySearchTree<T: Comparable> {
+public class BinarySearchTree<T: Comparable> {
     var root : TreeNode<T>? = nil
 
     init() {
         root = nil
     }
 
-    init(input: Array<T>) {
+    public init(input: Array<T>) {
         insert(input: input)
     }
 
@@ -51,7 +51,7 @@ class BinarySearchTree<T: Comparable> {
         }
     }
 
-    func search(searchValue: T) -> TreeNode<T>? {
+    public func search(searchValue: T) -> TreeNode<T>? {
         var cur = root
         while(cur != nil) {
             if searchValue == cur?.data {

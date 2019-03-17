@@ -8,9 +8,9 @@
 import Foundation
 
 public class TreeNode<T> {
-    var data: T
-    var left: TreeNode?
-    var right: TreeNode?
+    open var data: T
+    open var left: TreeNode?
+    open var right: TreeNode?
 
     init(data: T,
         leftNode: TreeNode? = nil,
