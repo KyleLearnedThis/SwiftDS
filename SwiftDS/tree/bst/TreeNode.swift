@@ -12,7 +12,7 @@ public class TreeNode<T> {
     open var left: TreeNode?
     open var right: TreeNode?
 
-    init(data: T,
+    public init(data: T,
         leftNode: TreeNode? = nil,
         rightNode: TreeNode? = nil) {
         self.data = data
