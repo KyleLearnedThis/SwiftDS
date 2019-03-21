@@ -1,0 +1,13 @@
+{
+    "graph" : [
+        {
+            "vertex" : {
+                "id" : "1",
+                "edge" : [
+                    {"id": "2", "weight": "8", "direction": "BOTH"},
+                    {"id": "3", "weight": "9", "direction": "BOTH"}
+                ]
+            }
+        }
+    ]
+}
