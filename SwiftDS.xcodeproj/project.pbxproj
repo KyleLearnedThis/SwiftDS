@@ -38,6 +38,12 @@
 		DEA1E23F22234AF400835262 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E23E22234AF400835262 /* QueueTest.swift */; };
 		DEA1E24122234B1A00835262 /* PriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E24022234B1A00835262 /* PriorityQueueTest.swift */; };
 		DEA1E24422234B5B00835262 /* BinarySearchTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E24322234B5B00835262 /* BinarySearchTreeTest.swift */; };
+		DEBABBD82243418C00F75C85 /* GraphUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBD72243418C00F75C85 /* GraphUtils.swift */; };
+		DEBABBE02243424E00F75C85 /* test02.json in Resources */ = {isa = PBXBuildFile; fileRef = DEBABBDC2243424E00F75C85 /* test02.json */; };
+		DEBABBE12243424E00F75C85 /* test01.json in Resources */ = {isa = PBXBuildFile; fileRef = DEBABBDD2243424E00F75C85 /* test01.json */; };
+		DEBABBE22243424E00F75C85 /* test03.json in Resources */ = {isa = PBXBuildFile; fileRef = DEBABBDE2243424E00F75C85 /* test03.json */; };
+		DEBABBE4224345CA00F75C85 /* GraphUtilsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE3224345CA00F75C85 /* GraphUtilsTest.swift */; };
+		DEBABBE52243463E00F75C85 /* GraphUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBD72243418C00F75C85 /* GraphUtils.swift */; };
 		DEFCBBF2223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF3223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF5223F6F2700CBBAC6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */; };
@@ -80,6 +86,11 @@
 		DEA1E23E22234AF400835262 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
 		DEA1E24022234B1A00835262 /* PriorityQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTest.swift; sourceTree = "<group>"; };
 		DEA1E24322234B5B00835262 /* BinarySearchTreeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BinarySearchTreeTest.swift; path = SwiftDSTests/tree/bst/BinarySearchTreeTest.swift; sourceTree = SOURCE_ROOT; };
+		DEBABBD72243418C00F75C85 /* GraphUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphUtils.swift; sourceTree = "<group>"; };
+		DEBABBDC2243424E00F75C85 /* test02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test02.json; sourceTree = "<group>"; };
+		DEBABBDD2243424E00F75C85 /* test01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test01.json; sourceTree = "<group>"; };
+		DEBABBDE2243424E00F75C85 /* test03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test03.json; sourceTree = "<group>"; };
+		DEBABBE3224345CA00F75C85 /* GraphUtilsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphUtilsTest.swift; sourceTree = "<group>"; };
 		DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		DEFCBBF7223F702E00CBBAC6 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
@@ -239,6 +250,24 @@
 			path = bst;
 			sourceTree = "<group>";
 		};
+		DEBABBD9224341DF00F75C85 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEBABBDD2243424E00F75C85 /* test01.json */,
+				DEBABBDC2243424E00F75C85 /* test02.json */,
+				DEBABBDE2243424E00F75C85 /* test03.json */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DEBABBDA224341E700F75C85 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				DEBABBE3224345CA00F75C85 /* GraphUtilsTest.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
 		DEFCBBED223F684900CBBAC6 /* graph */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +279,8 @@
 		DEFCBBEE223F685400CBBAC6 /* graph */ = {
 			isa = PBXGroup;
 			children = (
-				DEFCBBF0223F686800CBBAC6 /* core */,
+				DEBABBDA224341E700F75C85 /* core */,
+				DEBABBD9224341DF00F75C85 /* resources */,
 			);
 			path = graph;
 			sourceTree = "<group>";
@@ -261,13 +291,7 @@
 				DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */,
 				DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */,
 				DEFCBBF7223F702E00CBBAC6 /* Vertex.swift */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		DEFCBBF0223F686800CBBAC6 /* core */ = {
-			isa = PBXGroup;
-			children = (
+				DEBABBD72243418C00F75C85 /* GraphUtils.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -370,6 +394,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBABBE12243424E00F75C85 /* test01.json in Resources */,
+				DEBABBE22243424E00F75C85 /* test03.json in Resources */,
+				DEBABBE02243424E00F75C85 /* test02.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +413,7 @@
 				DEA1E23422234A4700835262 /* Queue.swift in Sources */,
 				DEA1E22E22234A4700835262 /* LinkedList.swift in Sources */,
 				DEFCBBF8223F702E00CBBAC6 /* Vertex.swift in Sources */,
+				DEBABBD82243418C00F75C85 /* GraphUtils.swift in Sources */,
 				DEA1E23622234A4700835262 /* BinarySearchTree.swift in Sources */,
 				DE900598222CF6C300458081 /* BaseSort.swift in Sources */,
 				DEA1E23222234A4700835262 /* PriorityQueue.swift in Sources */,
@@ -404,6 +432,7 @@
 				DEA1E22D22234A4700835262 /* Node.swift in Sources */,
 				DE0079542234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DEA1E23522234A4700835262 /* Queue.swift in Sources */,
+				DEBABBE52243463E00F75C85 /* GraphUtils.swift in Sources */,
 				DEFCBBF6223F6F2700CBBAC6 /* Direction.swift in Sources */,
 				DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */,
 				DEFCBBF9223F702E00CBBAC6 /* Vertex.swift in Sources */,
@@ -417,6 +446,7 @@
 				DEA1E24122234B1A00835262 /* PriorityQueueTest.swift in Sources */,
 				DEA1E22022234A0C00835262 /* StackTest.swift in Sources */,
 				DEA1E24422234B5B00835262 /* BinarySearchTreeTest.swift in Sources */,
+				DEBABBE4224345CA00F75C85 /* GraphUtilsTest.swift in Sources */,
 				DEA1E23722234A4700835262 /* BinarySearchTree.swift in Sources */,
 				DEA1E22F22234A4700835262 /* LinkedList.swift in Sources */,
 				DEA1E23F22234AF400835262 /* QueueTest.swift in Sources */,
