@@ -7,7 +7,15 @@
 
 import Foundation
 
-public class Vertex<T: Comparable> {
+public class Vertex<T: Comparable> : Comparable {
+    
+    public static func < (lhs: Vertex<T>, rhs: Vertex<T>) -> Bool {
+        return lhs.cost > rhs.cost
+    }
+
+    public static func == (lhs: Vertex<T>, rhs: Vertex<T>) -> Bool {
+        return lhs.cost == rhs.cost
+    }
     
     public var id: T
     public var edgeList = Array<Edge<T>>()

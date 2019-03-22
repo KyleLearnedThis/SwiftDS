@@ -17,7 +17,7 @@ public class GraphUtils {
             .appendingPathExtension(x[1])
         do {
             input = try String(contentsOf: url, encoding: .utf8)
-            print("===== input: \(input)=====")
+//            print("===== input: \(input)=====")
         } catch {
             print("open file: \(fileName) failed")
         }
@@ -37,7 +37,7 @@ public class GraphUtils {
                         let vertexValue = dict2["vertex"]
                         if let dict3 = vertexValue as? [String: Any] {
                             let vertexId: String = dict3["id"]! as! String
-                            print("======== VertexId: \(vertexId) ========")
+                            // print("======== VertexId: \(vertexId) ========")
                             let v = Vertex<String>(id: vertexId)
                             if let edgeJsonArray = dict3["edge"] as? [Any] {
                                 for edgeJson in edgeJsonArray {
@@ -46,9 +46,9 @@ public class GraphUtils {
                                         let edgeWeight = edgeValue["weight"]!
                                         let edgeDirection = edgeValue["direction"]!
                                         let direction = chooseDirection(inputString: edgeDirection)
-                                        print("========== EdgeId: \(edgeId) ==========")
-                                        print("========== EdgeWeight: \(edgeWeight) ==========")
-                                        print("========== EdgeDirection: \(edgeDirection) ==========")
+                                        // print("========== EdgeId: \(edgeId) ==========")
+                                        // print("========== EdgeWeight: \(edgeWeight) ==========")
+                                        // print("========== EdgeDirection: \(edgeDirection) ==========")
                                         let edgeWeightValue = Int(edgeWeight)!
                                         let edge = Edge(x: vertexId, y: edgeId, weight: edgeWeightValue, direction: direction)
                                         v.edgeList.append(edge)
