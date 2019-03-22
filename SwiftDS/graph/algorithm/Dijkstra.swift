@@ -66,8 +66,13 @@ public class Dijkstra {
         }
     }
 
-    // Original priority does not rebalance the queue if you modify the item's weight.
-    // So here it is to reblance the queue each time I relax the cost of vertices.
+    /**
+        Original priority does not rebalance the queue if you modify the item's weight.
+        Trick is to reinsert the same item into the queue to preserve order.
+        - parameters:
+            - queue: priority queue
+            - vertex: element in queue that changed weight after insertion
+     */
     func refreshQueue(queue: PriorityQueue<Vertex<String>>, vertex: Vertex<String>) {
         var q = queue
         for v in q {
