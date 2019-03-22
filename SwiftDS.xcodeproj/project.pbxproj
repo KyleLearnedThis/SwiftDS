@@ -46,6 +46,9 @@
 		DEBABBE52243463E00F75C85 /* GraphUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBD72243418C00F75C85 /* GraphUtils.swift */; };
 		DEBABBE7224371EE00F75C85 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE6224371EE00F75C85 /* Graph.swift */; };
 		DEBABBE8224371EE00F75C85 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE6224371EE00F75C85 /* Graph.swift */; };
+		DEBABBEA22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
+		DEBABBEB22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
+		DEBABBEF2244A4C500F75C85 /* DijkstraTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */; };
 		DEFCBBF2223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF3223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF5223F6F2700CBBAC6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */; };
@@ -94,6 +97,8 @@
 		DEBABBDE2243424E00F75C85 /* test03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test03.json; sourceTree = "<group>"; };
 		DEBABBE3224345CA00F75C85 /* GraphUtilsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphUtilsTest.swift; sourceTree = "<group>"; };
 		DEBABBE6224371EE00F75C85 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		DEBABBE922437C5300F75C85 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraTest.swift; sourceTree = "<group>"; };
 		DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		DEFCBBF7223F702E00CBBAC6 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
@@ -271,9 +276,26 @@
 			path = core;
 			sourceTree = "<group>";
 		};
+		DEBABBEC22449D0200F75C85 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				DEBABBE922437C5300F75C85 /* Dijkstra.swift */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		DEBABBED2244A4A700F75C85 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
 		DEFCBBED223F684900CBBAC6 /* graph */ = {
 			isa = PBXGroup;
 			children = (
+				DEBABBEC22449D0200F75C85 /* algorithm */,
 				DEFCBBEF223F686100CBBAC6 /* core */,
 			);
 			path = graph;
@@ -282,6 +304,7 @@
 		DEFCBBEE223F685400CBBAC6 /* graph */ = {
 			isa = PBXGroup;
 			children = (
+				DEBABBED2244A4A700F75C85 /* algorithm */,
 				DEBABBDA224341E700F75C85 /* core */,
 				DEBABBD9224341DF00F75C85 /* resources */,
 			);
@@ -421,6 +444,7 @@
 				DEA1E23622234A4700835262 /* BinarySearchTree.swift in Sources */,
 				DEBABBE7224371EE00F75C85 /* Graph.swift in Sources */,
 				DE900598222CF6C300458081 /* BaseSort.swift in Sources */,
+				DEBABBEA22437C5300F75C85 /* Dijkstra.swift in Sources */,
 				DEA1E23222234A4700835262 /* PriorityQueue.swift in Sources */,
 				DE90059B222CF78E00458081 /* Sorter.swift in Sources */,
 				DE9005A4222CFD4E00458081 /* BubbleSort.swift in Sources */,
@@ -442,6 +466,7 @@
 				DEFCBBF6223F6F2700CBBAC6 /* Direction.swift in Sources */,
 				DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */,
 				DEFCBBF9223F702E00CBBAC6 /* Vertex.swift in Sources */,
+				DEBABBEB22437C5300F75C85 /* Dijkstra.swift in Sources */,
 				DE90059C222CF78E00458081 /* Sorter.swift in Sources */,
 				DEA1E23922234A4700835262 /* TreeNode.swift in Sources */,
 				DE900599222CF6C300458081 /* BaseSort.swift in Sources */,
@@ -450,6 +475,7 @@
 				DEA1E23D22234AC100835262 /* LinkedListTest.swift in Sources */,
 				DEFCBBF3223F68BC00CBBAC6 /* Edge.swift in Sources */,
 				DEA1E24122234B1A00835262 /* PriorityQueueTest.swift in Sources */,
+				DEBABBEF2244A4C500F75C85 /* DijkstraTest.swift in Sources */,
 				DEA1E22022234A0C00835262 /* StackTest.swift in Sources */,
 				DEA1E24422234B5B00835262 /* BinarySearchTreeTest.swift in Sources */,
 				DEBABBE4224345CA00F75C85 /* GraphUtilsTest.swift in Sources */,
