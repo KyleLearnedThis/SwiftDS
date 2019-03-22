@@ -12,7 +12,7 @@ class DijkstraTest: XCTestCase {
     func testBasic() {
         let dir = "dev/iOS/SwiftDS/SwiftDSTests/graph/resources/"
         let fileName = "test02.json"
-        var dijkstra = Dijkstra(inputDir: dir, fileName: fileName)
+        let dijkstra = Dijkstra(inputDir: dir, fileName: fileName)
         let source = "1"
         let target = "4"
         let expectedCost = 14
@@ -27,7 +27,6 @@ class DijkstraTest: XCTestCase {
             }
         }
         print("")
-
         XCTAssertEqual(actualCost, expectedCost)
     }
 
