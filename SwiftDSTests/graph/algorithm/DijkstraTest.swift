@@ -2,7 +2,6 @@
 //  DijkstraTest.swift
 //  SwiftDSTests
 //
-//  Created by dsch_iter on 3/21/19.
 //  Copyright © 2019 kylelearnedthis. All rights reserved.
 //
 
