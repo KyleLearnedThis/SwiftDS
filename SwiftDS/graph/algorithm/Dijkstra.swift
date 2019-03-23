@@ -13,6 +13,13 @@ public class Dijkstra {
         graph = Graph(docFileDir: inputDir, fileName: fileName)
     }
 
+    /**
+        - parameters:
+            - source: source ID as string
+            - target: destination ID as string
+        - returns:
+            (Array of Vertex<String>, Final cost of reaching the target in Int)
+     */
     public func findShortestDistance(source: String, target: String) -> ([Vertex<String>], Int) {
         initialize(source: source)
 

@@ -49,6 +49,7 @@
 		DEBABBEA22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
 		DEBABBEB22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
 		DEBABBEF2244A4C500F75C85 /* DijkstraTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */; };
+		DEBABBF22244CD1D00F75C85 /* GraphSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */; };
 		DEFCBBF2223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF3223F68BC00CBBAC6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */; };
 		DEFCBBF5223F6F2700CBBAC6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */; };
@@ -99,6 +100,7 @@
 		DEBABBE6224371EE00F75C85 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		DEBABBE922437C5300F75C85 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraTest.swift; sourceTree = "<group>"; };
+		DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSearch.swift; sourceTree = "<group>"; };
 		DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		DEFCBBF7223F702E00CBBAC6 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				DEBABBE922437C5300F75C85 /* Dijkstra.swift */,
+				DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBABBF22244CD1D00F75C85 /* GraphSearch.swift in Sources */,
 				DE0079532234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DEA1E23822234A4700835262 /* TreeNode.swift in Sources */,
 				DEFCBBF2223F68BC00CBBAC6 /* Edge.swift in Sources */,
