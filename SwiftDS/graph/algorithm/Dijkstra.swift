@@ -74,7 +74,7 @@ public class Dijkstra {
     }
 
     /**
-        Original priority does not rebalance the queue if you modify the item's weight.
+        Original priority queue does not rebalance the queue if you modify the item's weight.
         Trick is to reinsert the same item into the queue to preserve order.
         - parameters:
             - queue: priority queue
