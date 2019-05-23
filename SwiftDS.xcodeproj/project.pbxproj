@@ -388,9 +388,11 @@
 				TargetAttributes = {
 					DEA1E1F1222349C700835262 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					DEA1E1FA222349C700835262 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -400,6 +402,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DEA1E1E8222349C700835262;
 			productRefGroup = DEA1E1F3222349C700835262 /* Products */;
@@ -644,7 +647,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.albion.SwiftDS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -669,7 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.albion.SwiftDS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -687,7 +690,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.albion.SwiftDSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -705,7 +708,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.albion.SwiftDSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
