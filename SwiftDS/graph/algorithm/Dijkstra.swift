@@ -13,6 +13,13 @@ public class Dijkstra {
         graph = Graph(docFileDir: inputDir, fileName: fileName)
     }
 
+    /**
+        - parameters:
+            - source: source ID as string
+            - target: destination ID as string
+        - returns:
+            (Array of Vertex<String>, Final cost of reaching the target in Int)
+     */
     public func findShortestDistance(source: String, target: String) -> ([Vertex<String>], Int) {
         initialize(source: source)
 
@@ -67,7 +74,7 @@ public class Dijkstra {
     }
 
     /**
-        Original priority does not rebalance the queue if you modify the item's weight.
+        Original priority queue does not rebalance the queue if you modify the item's weight.
         Trick is to reinsert the same item into the queue to preserve order.
         - parameters:
             - queue: priority queue
