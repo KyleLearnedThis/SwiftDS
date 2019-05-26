@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Node<T> {
+public class Node<T> {
     var value: T
     public func getValue() -> T {
         return self.value
