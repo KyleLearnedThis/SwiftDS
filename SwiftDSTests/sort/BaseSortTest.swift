@@ -14,7 +14,7 @@ class BaseSortTest: XCTestCase {
     func testBasic() {
         let n: [Int] = [9,8,7,6,5]
         sort.input = n
-        sort.print()
+        sort.printAll()
     }
 
 }
