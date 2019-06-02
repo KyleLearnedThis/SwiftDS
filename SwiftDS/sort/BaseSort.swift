@@ -11,15 +11,15 @@ public class BaseSort {
 
     var input: [Int]
 
-    init(input: [Int] = []) {
+    init(_ input: [Int] = []) {
         self.input = input
     }
 
-    public func print() {
-        Swift.print("[", terminator: " ")
+    public func printAll() {
+        print("[", terminator: " ")
         for i in input {
-            Swift.print(i, terminator: " ")
+            print(i, terminator: " ")
         }
-        Swift.print("]")
+        print("]")
     }
 }
