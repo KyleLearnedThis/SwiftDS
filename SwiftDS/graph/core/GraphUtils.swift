@@ -10,14 +10,13 @@ import Foundation
 public class GraphUtils {
     public static func openHomeFile(inputDirectory: String, fileName: String) -> String {
         var input = ""
-        var x = fileName.components(separatedBy: ".")
+        let x = fileName.components(separatedBy: ".")
         let home = FileManager.default.homeDirectoryForCurrentUser
         let url = home.appendingPathComponent(inputDirectory)
             .appendingPathComponent(x[0])
             .appendingPathExtension(x[1])
         do {
             input = try String(contentsOf: url, encoding: .utf8)
-//            print("===== input: \(input)=====")
         } catch {
             print("open file: \(fileName) failed")
         }
