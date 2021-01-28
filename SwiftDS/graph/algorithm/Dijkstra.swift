@@ -37,7 +37,12 @@ public class Dijkstra {
             for edge in edgeList {
                 let id = edge.y
                 let weight = edge.weight
-                let alt = cost + weight
+                var alt = 0
+                if weight == Int.max {
+                    alt = weight
+                } else {
+                    alt = cost + weight
+                }
 
                 let v = graph.verticesMap[id]!
 
