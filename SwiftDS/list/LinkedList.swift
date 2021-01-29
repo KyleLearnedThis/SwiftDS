@@ -90,6 +90,7 @@ public class LinkedList<T: Comparable> {
 
             node.prev = nil
             node.next = nil
+            self.size -= 1
             return true
         } else {
             return false

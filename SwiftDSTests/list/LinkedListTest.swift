@@ -64,4 +64,33 @@ class LinkedListTest: XCTestCase {
         print("===== print after delete =====")
         list.printList()
     }
+
+    func testCustomList01() {
+        let list = LinkedList<BasicEntry>()
+        let node = BasicEntry("Kawaki", 10)
+        list.append(value: BasicEntry("Naruto", 1))
+        list.append(value: BasicEntry("Sasuke", 2))
+        list.append(value: BasicEntry("Sakura", 3))
+        list.append(value: BasicEntry("Jiraya", 4))
+        list.append(value: BasicEntry("Boruto", 5))
+        list.append(value: node)
+        list.append(value: BasicEntry("Sarada", 6))
+
+        let deleted = list.delete(value: node)
+        XCTAssertTrue(deleted, "Failed to delete this node")
+        printBasicEntry(list)
+        XCTAssertEqual(list.size, 6, "Failed to assert list size")
+    }
+
+    private func printBasicEntry(_ list: LinkedList<BasicEntry>) {
+        var cur = list.head
+        while(cur != nil) {
+            let value = cur!.value
+            let name = String(describing: value.name)
+            let id = value.id
+            print("====== name: \(name) ===== id: \(id) ======")
+            cur = cur?.next
+        }
+    }
+
 }
