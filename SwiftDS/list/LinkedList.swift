@@ -10,6 +10,7 @@ import Foundation
 public class LinkedList<T: Comparable> {
     var head: Node<T>? = nil
     var tail: Node<T>? = nil
+    var size = 0
 
     public func getHead() -> Node<T>? {
         return self.head
@@ -21,11 +22,11 @@ public class LinkedList<T: Comparable> {
     public init(input: Array<T> = []) {
         for i in input {
             let n = Node<T>(value: i)
-            add(node: n)
+            append(node: n)
         }
     }
 
-    public func add(node: Node<T>) {
+    public func append(node: Node<T>) {
         if head == nil {
             head = node
             tail = node
@@ -34,6 +35,32 @@ public class LinkedList<T: Comparable> {
             node.prev = tail
             tail = node
         }
+        self.size += 1
+    }
+
+    public func append(value: T) {
+        let node = Node<T>(value: value)
+        append(node: node)
+    }
+
+    func prepend(node: Node<T>) {
+        guard self.head != nil else {
+            self.head = node
+            self.tail = node
+            self.size += 1
+            return
+        }
+
+        self.head?.prev = node
+        node.next = self.head
+        self.head = node
+
+        self.size += 1
+    }
+
+    func prepend(value: T) {
+        let node = Node<T>(value: value)
+        prepend(node: node)
     }
 
     public func search(searchValue: T) -> Node<T>? {
@@ -47,6 +74,26 @@ public class LinkedList<T: Comparable> {
             }
         }
         return nil
+    }
+
+    public func delete(value: T) -> Bool {
+        if let node = search(searchValue: value) {
+            let prev = node.prev
+            let next = node.next
+
+            if let prev = prev {
+                prev.next = next
+            } else {
+                head = next
+            }
+            next?.prev = prev
+
+            node.prev = nil
+            node.next = nil
+            return true
+        } else {
+            return false
+        }
     }
 
     public func printList() {
