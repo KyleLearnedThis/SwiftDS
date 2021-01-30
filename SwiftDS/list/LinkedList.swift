@@ -76,6 +76,27 @@ public class LinkedList<T: Comparable> {
         return nil
     }
 
+    public func delete(node: Node<T>?) -> Bool {
+        if node != nil {
+            let prev = node?.prev
+            let next = node?.next
+
+            if let prev = prev {
+                prev.next = next
+            } else {
+                head = next
+            }
+            next?.prev = prev
+
+            node?.prev = nil
+            node?.next = nil
+            self.size -= 1
+            return true
+        } else {
+            return false
+        }
+    }
+
     public func delete(value: T) -> Bool {
         if let node = search(searchValue: value) {
             let prev = node.prev
