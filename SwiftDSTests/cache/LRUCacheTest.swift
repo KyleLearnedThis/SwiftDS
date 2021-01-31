@@ -9,27 +9,6 @@
 import XCTest
 
 class LRUCacheTest: XCTestCase {
-    class Pair: Hashable, Comparable {
-        static func < (lhs: LRUCacheTest.Pair, rhs: LRUCacheTest.Pair) -> Bool {
-            return lhs.id < rhs.id
-        }
-
-        static func == (lhs: LRUCacheTest.Pair, rhs: LRUCacheTest.Pair) -> Bool {
-            return lhs.id == rhs.id
-        }
-
-        func hash(into hasher: inout Hasher) {
-            hasher.combine(name)
-            hasher.combine(id)
-        }
-
-        var name: String
-        var id: Int
-        init( name: String = "Hi", id: Int = 0) {
-            self.name = name
-            self.id = id
-        }
-    }
 
     func testBasic() throws {
         let cache = LRUCache<Pair>(capacity: 3)
@@ -40,6 +19,10 @@ class LRUCacheTest: XCTestCase {
             let pair = Pair(name: names[i], id: ids[i])
             cache.set(pair, val: pair)
         }
+        let expected = "D-Wes"
+        let actual = cache.queue.head?.value.name
+
+        XCTAssertEqual(expected, actual)
         printCacheOrder(cache)
     }
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DE0079532234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */; };
 		DE0079542234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */; };
+		DE05EAF325C5637900D4C558 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05EAF225C5637900D4C558 /* Pair.swift */; };
+		DE05EAF825C563A800D4C558 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05EAF225C5637900D4C558 /* Pair.swift */; };
 		DE1D6B1622A482F80084183F /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D6B1522A482F80084183F /* HeapSort.swift */; };
 		DE1D6B1722A482F80084183F /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1D6B1522A482F80084183F /* HeapSort.swift */; };
 		DE5ABB8A22A489020067E073 /* HeapSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ABB8922A489020067E073 /* HeapSortTest.swift */; };
@@ -81,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		DE0079522234D52B00E7ACAA /* BinaryTreePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreePrinter.swift; sourceTree = "<group>"; };
+		DE05EAF225C5637900D4C558 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 		DE1D6B1522A482F80084183F /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		DE5ABB8922A489020067E073 /* HeapSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTest.swift; sourceTree = "<group>"; };
 		DE5ABB8C22A48A300067E073 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
@@ -324,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC6E17F25C419EB00CC65FA /* LRUCache.swift */,
+				DE05EAF225C5637900D4C558 /* Pair.swift */,
 			);
 			path = cache;
 			sourceTree = "<group>";
@@ -498,6 +502,7 @@
 				DEBABBEA22437C5300F75C85 /* Dijkstra.swift in Sources */,
 				DEA1E23222234A4700835262 /* PriorityQueue.swift in Sources */,
 				DE90059B222CF78E00458081 /* Sorter.swift in Sources */,
+				DE05EAF325C5637900D4C558 /* Pair.swift in Sources */,
 				DE9005A4222CFD4E00458081 /* BubbleSort.swift in Sources */,
 				DEA1E23022234A4700835262 /* Stack.swift in Sources */,
 				DEA1E22C22234A4700835262 /* Node.swift in Sources */,
@@ -515,6 +520,7 @@
 				DE0079542234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DEA1E23522234A4700835262 /* Queue.swift in Sources */,
 				DEBABBE52243463E00F75C85 /* GraphUtils.swift in Sources */,
+				DE05EAF825C563A800D4C558 /* Pair.swift in Sources */,
 				DEC6E16B25C402B900CC65FA /* BasicEntry.swift in Sources */,
 				DEFCBBF6223F6F2700CBBAC6 /* Direction.swift in Sources */,
 				DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */,
