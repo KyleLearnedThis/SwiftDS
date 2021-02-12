@@ -3,7 +3,7 @@
 //  SwiftDS
 //
 //  Copyright © 2019 kylelearnedthis. All rights reserved.
-//
+//  TODO: Would like to remove generic in favor of the simple decodable JSON object in the future.
 
 import Foundation
 

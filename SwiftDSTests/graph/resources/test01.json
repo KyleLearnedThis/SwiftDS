@@ -45,6 +45,15 @@
                     {"id": "Chicago", "weight": "2", "direction": "BOTH"}
                 ]
             }
+        },
+        {
+            "vertex" : {
+                "id" : "Los Angeles",
+                "edge" : [
+                    {"id": "Miami", "weight": "4", "direction": "BOTH"},
+                    {"id": "Boston", "weight": "10", "direction": "BOTH"}
+                ]
+            }
         }
     ]
 }
