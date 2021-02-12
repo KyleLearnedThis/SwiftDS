@@ -25,6 +25,9 @@
 		DE9005A4222CFD4E00458081 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A3222CFD4E00458081 /* BubbleSort.swift */; };
 		DE9005A5222CFD4E00458081 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A3222CFD4E00458081 /* BubbleSort.swift */; };
 		DE9005A7222CFD8C00458081 /* BubbleSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9005A6222CFD8C00458081 /* BubbleSortTest.swift */; };
+		DE962DED25D6915500636C6B /* GraphError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE962DEC25D6915500636C6B /* GraphError.swift */; };
+		DE962DEE25D6915500636C6B /* GraphError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE962DEC25D6915500636C6B /* GraphError.swift */; };
+		DE962DF425D6961600636C6B /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE962DF325D6961600636C6B /* GraphTest.swift */; };
 		DEA1E1FC222349C700835262 /* SwiftDS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA1E1F2222349C700835262 /* SwiftDS.framework */; };
 		DEA1E203222349C700835262 /* SwiftDS.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA1E1F5222349C700835262 /* SwiftDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA1E22022234A0C00835262 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1E21F22234A0C00835262 /* StackTest.swift */; };
@@ -57,7 +60,6 @@
 		DEBABBEA22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
 		DEBABBEB22437C5300F75C85 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBE922437C5300F75C85 /* Dijkstra.swift */; };
 		DEBABBEF2244A4C500F75C85 /* DijkstraTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */; };
-		DEBABBF22244CD1D00F75C85 /* GraphSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */; };
 		DEC6E16025C4022600CC65FA /* BasicEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E15F25C4022600CC65FA /* BasicEntry.swift */; };
 		DEC6E16B25C402B900CC65FA /* BasicEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E15F25C4022600CC65FA /* BasicEntry.swift */; };
 		DEC6E18025C419EB00CC65FA /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC6E17F25C419EB00CC65FA /* LRUCache.swift */; };
@@ -100,6 +102,8 @@
 		DE90059E222CF99B00458081 /* BaseSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseSortTest.swift; path = SwiftDSTests/sort/BaseSortTest.swift; sourceTree = SOURCE_ROOT; };
 		DE9005A3222CFD4E00458081 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		DE9005A6222CFD8C00458081 /* BubbleSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortTest.swift; sourceTree = "<group>"; };
+		DE962DEC25D6915500636C6B /* GraphError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphError.swift; sourceTree = "<group>"; };
+		DE962DF325D6961600636C6B /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		DEA1E1F2222349C700835262 /* SwiftDS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA1E1F5222349C700835262 /* SwiftDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDS.h; sourceTree = "<group>"; };
 		DEA1E1F6222349C700835262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,7 +129,6 @@
 		DEBABBE6224371EE00F75C85 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		DEBABBE922437C5300F75C85 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		DEBABBEE2244A4C500F75C85 /* DijkstraTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DijkstraTest.swift; sourceTree = "<group>"; };
-		DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSearch.swift; sourceTree = "<group>"; };
 		DEC6E15F25C4022600CC65FA /* BasicEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEntry.swift; sourceTree = "<group>"; };
 		DEC6E17F25C419EB00CC65FA /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 		DEC6E18525C5531300CC65FA /* LRUCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCacheTest.swift; sourceTree = "<group>"; };
@@ -163,8 +166,8 @@
 				DE900597222CF6C300458081 /* BaseSort.swift */,
 				DE9005A3222CFD4E00458081 /* BubbleSort.swift */,
 				DE1D6B1522A482F80084183F /* HeapSort.swift */,
-				DE90059A222CF78E00458081 /* Sorter.swift */,
 				DE5ABB8C22A48A300067E073 /* QuickSort.swift */,
+				DE90059A222CF78E00458081 /* Sorter.swift */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 		DEBABBDA224341E700F75C85 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				DE962DF325D6961600636C6B /* GraphTest.swift */,
 				DEBABBE3224345CA00F75C85 /* GraphUtilsTest.swift */,
 			);
 			path = core;
@@ -321,7 +325,6 @@
 			isa = PBXGroup;
 			children = (
 				DEBABBE922437C5300F75C85 /* Dijkstra.swift */,
-				DEBABBF12244CD1D00F75C85 /* GraphSearch.swift */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				DEFCBBF4223F6F2700CBBAC6 /* Direction.swift */,
 				DEFCBBF1223F68BC00CBBAC6 /* Edge.swift */,
 				DEBABBE6224371EE00F75C85 /* Graph.swift */,
+				DE962DEC25D6915500636C6B /* GraphError.swift */,
 				DEBABBD72243418C00F75C85 /* GraphUtils.swift */,
 				DEFCBBF7223F702E00CBBAC6 /* Vertex.swift */,
 			);
@@ -500,9 +504,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBABBF22244CD1D00F75C85 /* GraphSearch.swift in Sources */,
 				DE0079532234D52B00E7ACAA /* BinaryTreePrinter.swift in Sources */,
 				DE1D6B1622A482F80084183F /* HeapSort.swift in Sources */,
+				DE962DED25D6915500636C6B /* GraphError.swift in Sources */,
 				DEA1E23822234A4700835262 /* TreeNode.swift in Sources */,
 				DEFCBBF2223F68BC00CBBAC6 /* Edge.swift in Sources */,
 				DEA1E23422234A4700835262 /* Queue.swift in Sources */,
@@ -551,7 +555,9 @@
 				DE900599222CF6C300458081 /* BaseSort.swift in Sources */,
 				DEA1E23122234A4700835262 /* Stack.swift in Sources */,
 				DE90059F222CF99B00458081 /* BaseSortTest.swift in Sources */,
+				DE962DEE25D6915500636C6B /* GraphError.swift in Sources */,
 				DEA1E23D22234AC100835262 /* LinkedListTest.swift in Sources */,
+				DE962DF425D6961600636C6B /* GraphTest.swift in Sources */,
 				DED7DBBD25C823AF0023DEE4 /* LFUCacheItem.swift in Sources */,
 				DED7DBBA25C823AC0023DEE4 /* LFUMapEntry.swift in Sources */,
 				DE5ABB8E22A48A300067E073 /* QuickSort.swift in Sources */,
