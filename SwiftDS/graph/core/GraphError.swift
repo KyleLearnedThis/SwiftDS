@@ -9,6 +9,5 @@
 import Foundation
 
 enum GraphError: Error {
-    case noRootNodeFound
     case noNodeFound
 }

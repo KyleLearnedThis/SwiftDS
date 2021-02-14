@@ -10,7 +10,7 @@ import XCTest
 
 class GraphTest: XCTestCase {
 
-    func testBasic() throws {
+    func testBFS() throws {
         let dir = "dev/iOS/SwiftDS/SwiftDSTests/graph/resources/"
         let fileName = "test01.json"
         let graph = Graph(docFileDir: dir, fileName: fileName)
@@ -21,4 +21,14 @@ class GraphTest: XCTestCase {
         XCTAssertEqual(actual, expected, "Expected to find \(searchCity) but is not found")
     }
 
+    func testDFS() throws {
+        let dir = "dev/iOS/SwiftDS/SwiftDSTests/graph/resources/"
+        let fileName = "test01.json"
+        let graph = Graph(docFileDir: dir, fileName: fileName)
+        let startCity = "San Francisco"
+        let searchCity = "Miami"
+        let expected = true
+        let actual = try graph.dfsSearch(root: startCity, key: searchCity)
+        XCTAssertEqual(actual, expected, "Expected to find \(searchCity) but is not found")
+    }
 }
