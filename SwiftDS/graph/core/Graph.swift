@@ -27,7 +27,7 @@ public class Graph {
 
     func bfsSearch(root: String, key: String) throws -> Bool {
         guard let src = verticesMap[root] else {
-            throw GraphError.noRootNodeFound
+            throw GraphError.noNodeFound
         }
 
         let queue = Queue<Vertex<String>>()
@@ -46,12 +46,49 @@ public class Graph {
                 guard let v = verticesMap[nid] else {
                     throw GraphError.noNodeFound
                 }
+
                 if !v.isVisited {
+                    print("[\(v.id)] ", terminator: " ")
                     queue.push(v)
                     v.isVisited = true
                 }
             }
         }
+        return false
+    }
+
+    func dfsSearch(key: String) throws -> Bool {
+        let srcId = verticesMap.keys.first!
+        return try dfsSearch(root: srcId, key: key)
+    }
+
+    func dfsSearch(root: String, key: String) throws -> Bool {
+        guard let src = verticesMap[root] else {
+            throw GraphError.noNodeFound
+        }
+        src.isVisited = true
+
+        let stack = Stack<Vertex<String>>()
+        stack.push(src)
+
+        while stack.size() != 0 {
+            let cur = stack.pop()
+            let neighbors = cur.edgeList
+            for neighbor in neighbors {
+                let nid = neighbor.y
+                let v = verticesMap[nid]!
+                if v.id == key {
+                    return true
+                }
+
+                if !v.isVisited {
+                    print("[\(v.id)] ", terminator: " ")
+                    stack.push(v)
+                    v.isVisited = true
+                }
+            }
+        }
+
         return false
     }
 }
