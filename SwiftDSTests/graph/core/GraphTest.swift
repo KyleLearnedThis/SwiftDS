@@ -16,9 +16,8 @@ class GraphTest: XCTestCase {
         let graph = Graph(docFileDir: dir, fileName: fileName)
         let starCity = "San Francisco"
         let searchCity = "Miami"
-        let expected = true
-        let actual = try graph.bfsSearch(root: starCity, key: searchCity)
-        XCTAssertEqual(actual, expected, "Expected to find \(searchCity) but is not found")
+        let actual = try graph.bfsSearch(root: starCity, key: searchCity)!
+        XCTAssertEqual(actual.id, searchCity, "Expected to find \(searchCity) but is not found")
     }
 
     func testDFS() throws {
@@ -27,8 +26,7 @@ class GraphTest: XCTestCase {
         let graph = Graph(docFileDir: dir, fileName: fileName)
         let startCity = "San Francisco"
         let searchCity = "Miami"
-        let expected = true
-        let actual = try graph.dfsSearch(root: startCity, key: searchCity)
-        XCTAssertEqual(actual, expected, "Expected to find \(searchCity) but is not found")
+        let actual = try graph.dfsSearch(root: startCity, key: searchCity)!
+        XCTAssertEqual(actual.id, searchCity, "Expected to find \(searchCity) but is not found")
     }
 }

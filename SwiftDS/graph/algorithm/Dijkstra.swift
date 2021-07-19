@@ -38,7 +38,7 @@ public class Dijkstra {
                 let id = edge.y
                 let weight = edge.weight
                 var alt = 0
-                if weight == Int.max {
+                if cost == Int.max {
                     alt = weight
                 } else {
                     alt = cost + weight
