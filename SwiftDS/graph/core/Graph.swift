@@ -17,52 +17,51 @@ public class Graph {
         self.verticesMap = GraphUtils.parseGraphJsonFile(inputDirectory: docFileDir, fileName: fileName)
     }
 
-    func bfsSearch(key: String) throws -> Bool {
+    func bfsSearch(key: String) throws -> Vertex<String>? {
         if verticesMap.isEmpty {
-            return false
+            return nil
         }
         let srcId = verticesMap.keys.first!
         return try bfsSearch(root: srcId, key: key)
     }
 
-    func bfsSearch(root: String, key: String) throws -> Bool {
+    func bfsSearch(root: String, key: String) throws -> Vertex<String>? {
         guard let src = verticesMap[root] else {
             throw GraphError.noNodeFound
         }
 
         let queue = Queue<Vertex<String>>()
         queue.push(src)
-        src.isVisited = true
 
         while queue.size() != 0 {
             let cur = queue.pop()
+            cur.isVisited = true
+
             if cur.id == key {
-                return true
+                return cur
             }
 
-            let neighbors = cur.edgeList
-            for neighbor in neighbors {
-                let nid = neighbor.y
-                guard let v = verticesMap[nid] else {
+            for edge in cur.edgeList {
+                let id = edge.y
+                guard let neighbor = verticesMap[id] else {
                     throw GraphError.noNodeFound
                 }
 
-                if !v.isVisited {
-                    print("[\(v.id)] ", terminator: " ")
-                    queue.push(v)
-                    v.isVisited = true
+                if !neighbor.isVisited {
+                    queue.push(neighbor)
+                    neighbor.cost = cur.cost + 1
                 }
             }
         }
-        return false
+        return nil
     }
 
-    func dfsSearch(key: String) throws -> Bool {
+    func dfsSearch(key: String) throws -> Vertex<String>? {
         let srcId = verticesMap.keys.first!
         return try dfsSearch(root: srcId, key: key)
     }
 
-    func dfsSearch(root: String, key: String) throws -> Bool {
+    func dfsSearch(root: String, key: String) throws -> Vertex<String>? {
         guard let src = verticesMap[root] else {
             throw GraphError.noNodeFound
         }
@@ -78,17 +77,16 @@ public class Graph {
                 let nid = neighbor.y
                 let v = verticesMap[nid]!
                 if v.id == key {
-                    return true
+                    return v
                 }
 
                 if !v.isVisited {
-                    print("[\(v.id)] ", terminator: " ")
                     stack.push(v)
                     v.isVisited = true
                 }
             }
         }
 
-        return false
+        return nil
     }
 }
